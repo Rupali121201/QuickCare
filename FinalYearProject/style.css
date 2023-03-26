@@ -1,0 +1,129 @@
+﻿
+.home {
+    position: absolute;
+}
+
+/*.mynav {
+    position: absolute;
+    background: !important;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+*/
+#logo {
+    width: 150px;
+    height: 60px;
+    margin-left: 25px;
+}
+
+#form {
+    margin-top: 150px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+/*.navbar {
+    background: !important;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-left: 10px;
+}
+
+
+.nav-item:hover {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 1px;
+}
+*/
+
+#images {
+    height: 750px
+}
+
+.label1 {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+
+
+.home {
+    position: absolute;
+}
+
+.mynav {
+    position: absolute;
+    background: !important;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width: 150px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-left: 10px;
+}
+
+/*   .nav-item:hover{
+            background-color: lightgray;
+            border-radius:8px;
+            padding:1px;
+            
+        }*/
+
+.navbar-light .navbar-nav .nav-link {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-family: "open-sans";
+    transition: 0.3s ease;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    /*background: #11ADE8;*/
+    background:#b5dcff;
+    padding: 6px 0;
+}
+
+.form-inline {
+    margin-right: 600px;
