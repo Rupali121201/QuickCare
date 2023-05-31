@@ -200,11 +200,11 @@
               
                 
 
-                    <asp:GridView ID="GridView1" class="gd" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="251px" Width="723px">
+                    <asp:GridView ID="GridView1" class="gd" runat="server" CellPadding="4" ForeColor="#333333" Height="251px" Width="723px" CssClass="table table-hover table-responsive" HeaderStyle-HorizontalAlign="Center" BorderStyle="Dashed">
                         <AlternatingRowStyle BackColor="White" />
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
                         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                         <RowStyle BackColor="#EFF3FB" />
                         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />

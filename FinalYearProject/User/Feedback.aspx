@@ -19,9 +19,6 @@
         }
 
 
-
-
-
         .sidebar {
             margin: 0;
             padding: 0;
@@ -115,12 +112,13 @@
         <hr />
         <a href="../User/BookingDriver.aspx">Driver Request</a>
         <hr />
-        <a href="../Map.aspx">Mechanic Request </a>
+        <a href="../MechanicFinder">Mechanic Request </a>
         <hr />
-        <a href="../RoadSideAssistance.aspx">RoadSide Assistance</a>
+         <a href="../User/RequestPage.aspx">Request </a>
         <hr />
-        <a href="UpdateDriver.aspx">Update Details </a>
+        <a href="../RoadSideAssistance.aspx">Our Services</a>
         <hr />
+        
         <a href="Feedback.aspx">Feedback </a>
         <%--     <hr />--%>
         <%--  <a href="#contact">Request</a>
@@ -128,7 +126,7 @@
         <a href="#about">Search</a>--%>
 
         <hr />
-        <a href="HomePage.aspx">LogOut</a>
+        <a href="../../HomePage.aspx">LogOut</a>
     </div>
 
 

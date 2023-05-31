@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Content/bootstrap.min.css" />
     <style>
         body {
             margin: 0;
@@ -83,11 +83,19 @@
                 float: none;
             }
         }
+
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <form id="form1" runat="server">
+
+
+   <%--     <div id="nav">
+            <asp:Label ID="Label1" runat="server" CssClass="center-block" Text="Label"></asp:Label>
+            <%--  <asp:Image ID="Image1" runat="server" />--%>
+     <%--   </div>--%>
         <div class="sidebar">
             <%--    <a href="#image" id="image">--%>
             <img src="https://img.icons8.com/color/81/000000/person-female.png" id="image" alt="image not found" />
@@ -100,29 +108,28 @@
             <i class="fa fa-facebook-square" style="font-size: 24px; margin-left: 10px"></i>
 
             <hr />
-            <a href="AdminPage.aspx">Dashboard </a>
+            <a href="AdminPage.aspx">Dashboard</a>
             <hr />
-
-            <a href="../Admin/AdminDashboard.aspx">Add Mechanic </a>
+            <a href="AdminDashboard.aspx">Add Mechanic</a>
             <hr />
-            <a href="AddDriver.aspx">Add Driver</a>
+            <%--     <a href="../AddDriver.aspx">Add Driver</a>
+        <hr />--%>
+            <a href="UpdateDriver.aspx">Update Driver</a>
+            <%--  <a href="../UpdateDriver.aspx">Update Driver</a>--%>
             <hr />
-            <a href="UpdateDriver.aspx">Update Driver </a>
+            <a href="FeedbackAdmin">User Feedback</a>
             <hr />
-            <a href="FeedbackAdmin.aspx">User Feedback</a>
-            <hr />
-            <a href="#contact">Request</a>
-            <hr />
-            <a href="HomePage.aspx">LogOut</a>
-
-            <hr />
+<%--            <a href="#contact">Request </a>
+            <hr />--%>
+            <a href="../HomePage.aspx">LogOut</a>
+            <%--        <a href="#about">Search <i class="fa fa-angle-right" style="font-size: 24px; margin-left: 125px;"></i></a>--%>
         </div>
 
 
         <div class="content">
             <center>
-                <h1>User Feedback</h1>
-                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="322px" Width="1424px">
+                <h1 style="background-color:#507cd1;color:white;margin-left:45px">User Feedback</h1>
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" Height="350px" Width="1200px" CssClass="table table-bordered table-hover table-responsive">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

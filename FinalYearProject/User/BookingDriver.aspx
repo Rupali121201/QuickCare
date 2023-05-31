@@ -19,9 +19,6 @@
         }
 
 
-
-
-
         .sidebar {
             margin: 0;
             padding: 0;
@@ -127,18 +124,23 @@
 
         <hr />
         <a href="../User/BookingDriver.aspx">Driver Request</a>
+          <hr />
+        <a href="../MechanicFinder.aspx">Mechanic Finder </a>
         <hr />
-        <a href="../Map.aspx">Mechanic Request </a>
+         <a href="../User/RequestPage.aspx">Request</a>
         <hr />
-        <a href="../RoadSideAssistance.aspx">RoadSide Assistance</a>
-        <hr />
-        <a href="UpdateDriver.aspx">Update Details </a>
+        <a href="../RoadSideAssistance.aspx">Our Services</a>
+        
         <hr />
         <a href="Feedback.aspx">Feedback </a>
-
-
+      
         <hr />
-        <a href="HomePage.aspx">LogOut</a>
+     <%--   <a href="../RequestPage.aspx">Request Page </a>--%>
+
+
+
+      <%--  <hr />--%>
+        <a href="../../HomePage.aspx">LogOut</a>
     </div>
 
 
@@ -204,7 +206,7 @@
                     <div class="mb-3 ">
                         <label for="date" class="form-label">Pick Up Date</label>
                         <%--                         <asp:Calendar ID="Calendar1" runat="server" CssClass="form-control"></asp:Calendar>--%>
-                        &nbsp;<asp:TextBox ID="date" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                        &nbsp;<asp:TextBox ID="date" runat="server" CssClass="form-control" TextMode="Date" DateFormat="dd/MM/yyyy" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="date" ErrorMessage="Pick Up date is Required" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
 

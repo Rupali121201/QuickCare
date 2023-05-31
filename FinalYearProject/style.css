@@ -79,7 +79,7 @@
 }
 
 .navbar-brand {
-    font-size: 25px;
+    font-size: 250px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -93,6 +93,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     margin-left: 10px;
+
 }
 
 /*   .nav-item:hover{
@@ -127,3 +128,4 @@
 
 .form-inline {
     margin-right: 600px;
+}

@@ -18,7 +18,7 @@ namespace FinalYearProject.Admin
 
 
 
-            string sqlCommandText = $"select * from Mechanic";
+            string sqlCommandText = $"select * from Mechanic_info";
             SqlCommand sqlCommand = new SqlCommand(sqlCommandText, sqlConnection);
             SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
             DataSet ds = new DataSet();
@@ -26,7 +26,7 @@ namespace FinalYearProject.Admin
             gv.DataSource = ds;
             gv.DataBind();
 
-
+            Label2.Text = "Welcome  " + Session["UserName"];
 
             //string sqlCommandText2 = $"select * from Customerdetails";
             //SqlCommand sqlCommand2 = new SqlCommand(sqlCommandText2, sqlConnection);
@@ -47,13 +47,13 @@ namespace FinalYearProject.Admin
             //if (Page.IsPostBack)
             //{
 
-            string sqlCommandText = $"insert into Mechanic values('{id.Text}','{rnumber.Text}','{TextBox1.Text}','{TextBox2.Text}','{experience.Text}','{rating.Text}','{rate.Text}')";
+            string sqlCommandText = $"insert into Mechanic_info values('{rnumber.Text}','{shop.Text}','{city.Text}','{phone.Text}','{email.Text}')";
             // string sqlCommandText = $"insert into MechanicDetails(name,age,mnumber,experience,rating,rate)  select '{rnumber.Text}','{TextBox1.Text}','{TextBox2.Text}','{experience.Text}','{rate.Text}' from AllRooms where '{rnumber.Text}'=AllRooms.RoomNo";
             SqlCommand sqlCommand = new SqlCommand(sqlCommandText, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             Label1.Text = "Saved Successfully!!";
 
-            string sqlCommandText2 = $"select * from Mechanic";
+            string sqlCommandText2 = $"select * from Mechanic_info";
             SqlCommand sqlCommand2 = new SqlCommand(sqlCommandText2, sqlConnection);
             SqlDataAdapter adapter2 = new SqlDataAdapter(sqlCommand2);
             DataSet ds2 = new DataSet();
@@ -66,14 +66,14 @@ namespace FinalYearProject.Admin
         {
             SqlConnection sqlConnection = new SqlConnection(@"server=LAPTOP-2N1OBICQ\SQLEXPRESS;database=QuickCareDB;trusted_connection=yes");
             sqlConnection.Open();
-            string sqlCommandText4 = $"delete from Mechanic where id='{id.Text}'";
+            string sqlCommandText4 = $"delete from Mechanic_info where mechanicId='{id.Text}'";
             SqlCommand sqlCommand4 = new SqlCommand(sqlCommandText4, sqlConnection);
             sqlCommand4.ExecuteNonQuery();
             Label1.Text = "Deleted Successfully!!";
 
 
             /*string sqlCommandText2 = $"select r.RoomNo,r.RoomType,r.RoomCategory,r.RoomCost,r.RoomStatus from CustomerDetails c JOIN RoomDetails r ON r.Id = c.id";*/
-            string sqlCommandText5 = $"select * from Mechanic";
+            string sqlCommandText5 = $"select * from Mechanic_info";
             SqlCommand sqlCommand5 = new SqlCommand(sqlCommandText5, sqlConnection);
             SqlDataAdapter adapter3 = new SqlDataAdapter(sqlCommand5);
             DataSet ds3 = new DataSet();
@@ -86,11 +86,11 @@ namespace FinalYearProject.Admin
         {
             id.Text = gv.SelectedRow.Cells[1].Text;
             rnumber.Text = gv.SelectedRow.Cells[2].Text;
-            TextBox1.Text = gv.SelectedRow.Cells[3].Text;
-            TextBox2.Text = gv.SelectedRow.Cells[4].Text;
-            experience.Text = gv.SelectedRow.Cells[5].Text;
-            rating.Text = gv.SelectedRow.Cells[6].Text;
-            rate.Text = gv.SelectedRow.Cells[7].Text;
+            shop.Text = gv.SelectedRow.Cells[3].Text;
+            city.Text = gv.SelectedRow.Cells[4].Text;
+            phone.Text = gv.SelectedRow.Cells[5].Text;
+            email.Text = gv.SelectedRow.Cells[6].Text;
+          
         }
     }
 }

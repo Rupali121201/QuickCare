@@ -25,6 +25,8 @@ namespace FinalYearProject
             adapter.Fill(ds);
             GridView1.DataSource = ds;
             GridView1.DataBind();
+
+            Label1.Text = "Welcome  " + Session["UserName"];
         }
 
         protected void OnSelectBooked(object sender, EventArgs e)
@@ -81,6 +83,25 @@ namespace FinalYearProject
             GridView1.DataSource = ds3;
             GridView1.DataBind();
 
+
+        }
+
+        protected void AddDetails(object sender, EventArgs e)
+        {
+            SqlConnection sqlConnection = new SqlConnection(@"server=LAPTOP-2N1OBICQ\SQLEXPRESS;database=QuickCareDB;trusted_connection=yes");
+            sqlConnection.Open();
+            string sqlCommandText = $"insert into DriverDetails values('{id.Text}','{fnameTb.Text}','{MobTb.Text}','{EmailTb.Text}','{address.Text}','{password.Text}')";
+            SqlCommand sqlCommand = new SqlCommand(sqlCommandText, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            Label2.Text = "Driver Added Successfully!!";
+
+            string sqlCommandText2 = $"select * from DriverDetails";
+            SqlCommand sqlCommand2 = new SqlCommand(sqlCommandText2, sqlConnection);
+            SqlDataAdapter adapter2 = new SqlDataAdapter(sqlCommand2);
+            DataSet ds2 = new DataSet();
+            adapter2.Fill(ds2);
+            GridView1.DataSource = ds2;
+            GridView1.DataBind();
 
         }
     }

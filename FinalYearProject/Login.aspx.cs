@@ -45,7 +45,7 @@ namespace FinalYearProject
             if (sqlDataReader.Read())
             {
                 Session["UserName"] = sqlDataReader["email"];
-                Response.Redirect("AdminPage.aspx");
+                Response.Redirect("Admin/AdminPage.aspx");
             }
             else
             {

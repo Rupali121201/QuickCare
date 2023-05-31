@@ -15,7 +15,7 @@
 
     <style>
         body {
-           /* background-color: lightgray;*/
+            /* background-color: lightgray;*/
         }
 
 
@@ -90,6 +90,24 @@
                 float: none;
             }
         }
+
+        #nav {
+            background-color: #eff3fb;
+            margin-top: -40px;
+            height: 60px;
+            margin-left: -13px;
+            margin-right: -17px;
+        }
+
+        #Label2 {
+            /*font-family:'Times New Roman', Times, serif;*/
+            font-family: 'Arial Rounded MT';
+            font-size: 26px;
+            text-align: center;
+        }
+        .container-fluid{
+            background-color:#eff3fb;
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -110,21 +128,20 @@
         <i class="fa fa-facebook-square" style="font-size: 24px; margin-left: 10px"></i>
 
         <hr />
-        <a href="../AdminPage.aspx">Dashboard</a>
+        <a href="AdminPage.aspx">Dashboard</a>
         <hr />
-         <a href="../Admin/AdminDashboard.aspx">Add Mechanic</a>
-         <hr />
-        <a href="../AddDriver.aspx">Add Driver</a>
+        <a href="../Admin/AdminDashboard.aspx">Add Mechanic</a>
         <hr />
-        <a href="../UpdateDriver.aspx">Update Driver</a>
+        <%--     <a href="../AddDriver.aspx">Add Driver</a>
+        <hr />--%>
+        <a href="UpdateDriver.aspx">Update Driver</a>
         <hr />
-        <a href="../FeedbackAdmin">User Feedback</a>
+        <a href="FeedbackAdmin">User Feedback</a>
         <hr />
-        <a href="#contact">Request </a>
-        <hr />
-          <a href="../HomePage.aspx">LogOut</a>
-<%--        <a href="#about">Search <i class="fa fa-angle-right" style="font-size: 24px; margin-left: 125px;"></i></a>--%>
-
+<%--        <a href="#contact">Request </a>
+        <hr />--%>
+        <a href="../../HomePage.aspx">LogOut</a>
+        <%--        <a href="#about">Search <i class="fa fa-angle-right" style="font-size: 24px; margin-left: 125px;"></i></a>--%>
     </div>
 
 
@@ -134,104 +151,17 @@
     <br />
     <div class="content">
         <form id="form2" runat="server">
-            <div class="container-fluid">
-                <%--  <div class="rows"  ></div>--%>
-
-                <div class="rows">
-                    <div class="col-md-4"></div>
-
-                    <div class="col-md-4 " id="form">
-                        <h1 style="text-align: center">Add Mechanic Details</h1>
-                        <br />
-
-                          <div class="mb-3">
-                            <label for="id" class="form-label">Mechanic ID</label>
-                            <asp:TextBox ID="id" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="id" ErrorMessage="Mechanic ID is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="rnumber" class="form-label">Mechanic Name</label>
-                            <asp:TextBox ID="rnumber" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RoomNoValidator" runat="server" ControlToValidate="rnumber" ErrorMessage="Mechanic Name is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">
-                                Age
-                            </label>
-                            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="rnumber" ErrorMessage="Age is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Mobile Number</label>
-
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="rnumber" ErrorMessage="Mobile Number is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label for="exp" class="form-label">Experience</label>
-
-                            <asp:TextBox ID="experience" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="experience" ErrorMessage="Experience is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="exp" class="form-label">Rating</label>
-
-                            <asp:TextBox ID="rating" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="rating" ErrorMessage="Experience is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                        </div>
-
-
-                        <%--   <div class="mb-3">
-                <label for="status">Rating</label>
-                &nbsp;<asp:DropDownList ID="status" runat="server" CssClass="form-control">
-                    <asp:ListItem>Select</asp:ListItem>
-                   
-                    <asp:ListItem>less than 3 star</asp:ListItem>
-                    <asp:ListItem>greater than 3 star</asp:ListItem>
-                </asp:DropDownList>
-                <asp:RequiredFieldValidator ID="RatingValidator" runat="server" ControlToValidate="status" ErrorMessage="RequiredFieldValidator" ForeColor="Red" InitialValue="Select"></asp:RequiredFieldValidator>
-
-            </div>--%>
-
-
-                        <div class="mb-3">
-                            <label>
-                                Fixed Rate
-                            </label>
-                            <asp:TextBox ID="rate" runat="server" CssClass="form-control"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RateValidator" runat="server" ControlToValidate="rate" ErrorMessage="Rate is Required" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                        </div>
-
-                        <br />
-                        <center>
-                        <asp:Button type="submit" class="btn btn-primary " Text="Add Mechanic" runat="server" OnClick="addmechanicClick" ID="addmechanic"></asp:Button>
-                        <asp:Button type="submit" class="btn btn-primary " Text="Delete Mechanic" OnClick="DeleteMechanic" runat="server"></asp:Button>
-                        <asp:Label ID="Label1" runat="server"></asp:Label>
-                            </center>
-                    </div>
-
-                </div>
+            <div id="nav">
+                <asp:Label ID="Label2" runat="server" CssClass="center-block" Text="Label"></asp:Label>
+                <%--  <asp:Image ID="Image1" runat="server" />--%>
             </div>
 
-
-
-            <div id="table1">
+                        <div id="table1">
 
                 <center>
-                    <h1 runat="server">Mechanic Details</h1>
-                  
-                    <asp:GridView ID="gv" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="761px" HorizontalAlign="Center" Height="220px" OnSelectedIndexChanged="OnSelectBooked">
+                    <h1 runat="server" style="background-color:#507cd1;color:white;margin-left:43px">Mechanic Details</h1>
+
+                    <asp:GridView ID="gv" runat="server" CellPadding="4" ForeColor="#333333" Width="761px" Height="220px" OnSelectedIndexChanged="OnSelectBooked" BorderStyle="Dotted" CaptionAlign="Left" CssClass="table table-hover table-responsive table-bordered" HeaderStyle-HorizontalAlign="Center">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
@@ -254,7 +184,7 @@
 
                 </center>
                 <br />
-         <%--       <div id="table2">
+                <%--       <div id="table2">
                     <center>
                         <h1 runat="server">List Of Clients</h1>
                         <br />
@@ -274,8 +204,99 @@
                     </center>
                     <br />
                 </div>--%>
-
             </div>
+
+            <div class="container-fluid">
+                <%--  <div class="rows"  ></div>--%>
+
+                <div class="rows">
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4 " id="form">
+                        <h1 style="text-align: center">Add Mechanic Details</h1>
+                        <br />
+
+                        <div class="mb-3">
+                            <label for="id" class="form-label">Mechanic ID</label>
+                            <asp:TextBox ID="id" runat="server" CssClass="form-control"></asp:TextBox>
+                            <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="id" ErrorMessage="Mechanic ID is Required" ForeColor="Red"></asp:RequiredFieldValidator>--%>
+                        </div>
+                        <br />
+
+                        <div class="mb-3">
+                            <label for="rnumber" class="form-label">Mechanic Name</label>
+                            <asp:TextBox ID="rnumber" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RoomNoValidator" runat="server" ControlToValidate="rnumber" ErrorMessage="Mechanic Name is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Shop
+                            </label>
+                            <asp:TextBox ID="shop" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="shop" ErrorMessage="Shop is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+
+                            <asp:TextBox ID="city" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="city" ErrorMessage="City is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+
+                            <asp:TextBox ID="phone" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="phone" ErrorMessage="Phone is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+
+                            <asp:TextBox ID="email" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="email" ErrorMessage="Email is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                        </div>
+
+
+                       
+
+
+                        <%--   <div class="mb-3">
+                <label for="status">Rating</label>
+                &nbsp;<asp:DropDownList ID="status" runat="server" CssClass="form-control">
+                    <asp:ListItem>Select</asp:ListItem>
+                   
+                    <asp:ListItem>less than 3 star</asp:ListItem>
+                    <asp:ListItem>greater than 3 star</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="RatingValidator" runat="server" ControlToValidate="status" ErrorMessage="RequiredFieldValidator" ForeColor="Red" InitialValue="Select"></asp:RequiredFieldValidator>
+
+            </div>--%>
+
+
+                
+
+                        <br />
+                        <center>
+                            <asp:Button type="submit" class="btn btn-primary " Text="Add Mechanic" runat="server" OnClick="addmechanicClick" ID="addmechanic"></asp:Button>
+                            &nbsp;
+                        <asp:Button type="submit" class="btn btn-danger " Text="Delete Mechanic" OnClick="DeleteMechanic" runat="server"></asp:Button>
+                            <br />
+                        <br />    <asp:Label ID="Label1" runat="server"></asp:Label>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
         </form>
 </body>
 </html>

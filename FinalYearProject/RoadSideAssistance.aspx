@@ -32,7 +32,7 @@
         }
 
         #logo {
-            width: 150px;
+            width: 170px;
             height: 50px;
             margin-left: 25px;
         }
@@ -53,7 +53,7 @@
         .navbar-light .navbar-nav .nav-link {
             display: inline;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 18px;
             text-decoration: none;
             color: black;
             font-family: "open-sans";
@@ -66,9 +66,8 @@
 
         .navbar-nav .nav-link.active,
         .navbar-nav .nav-link:hover {
-            border-top: 4px solid #000000;
-            border-bottom: 4px solid #000000;
-            background: #11ADE8;
+            
+            background: white;
             padding: 6px 0;
         }
 
@@ -116,7 +115,7 @@
             background: #2b4eff;
             border: 5px solid #b2bfff;
             color: #fff;
-            /*margin-left: -20px;*/
+            /margin-left: -20px;/
             margin-left: 30px;
             margin-right: 10px;
             transform: scale(1.2);
@@ -217,8 +216,325 @@
                 border-left: transparent;
                 padding-bottom: 0px;
                 margin-bottom: 10px;
+
+
             }
         }
+        /slider/
+
+        .heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/-----Testimonial-------/
+
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url(https://img.freepik.com/premium-photo/empty-space-product-show-dark-room-with-light-spot-background_152359-580.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+/* ------testimonial  close-------*/
+        /slider/
+        /rsa/
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+ * {
+	 box-sizing: border-box;
+	 font-weight: normal;
+}
+ .bodys {
+	 
+	 
+	 text-align: center;
+	 font-family: 'Roboto Mono';
+	 padding: 1em;
+}
+ h1 {
+	 font-size: 2.2em;
+     color:black;
+}
+ .flip {
+	 position: relative;
+}
+ .flip > .front, .flip > .back {
+	 display: block;
+	 transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	 transition-duration: 0.5s;
+	 transition-property: transform, opacity;
+}
+ .flip > .front {
+	 transform: rotateY(0deg);
+}
+ .flip > .back {
+	 position: absolute;
+	 opacity: 0;
+	 top: 0px;
+	 left: 0px;
+	 width: 100%;
+	 height: 100%;
+	 transform: rotateY(-180deg);
+}
+ .flip:hover > .front {
+	 transform: rotateY(180deg);
+}
+ .flip:hover > .back {
+	 opacity: 1;
+	 transform: rotateY(0deg);
+}
+ .flip.flip-vertical > .back {
+	 transform: rotateX(-180deg);
+}
+ .flip.flip-vertical:hover > .front {
+	 transform: rotateX(180deg);
+}
+ .flip.flip-vertical:hover > .back {
+	 transform: rotateX(0deg);
+}
+ .flip {
+	 position: relative;
+	 display: inline-block;
+	 margin-right: 2px;
+	 margin-bottom: 1em;
+	 width: 400px;
+}
+ .flip > .front, .flip > .back {
+	 display: block;
+	 color: white;
+	 width: inherit;
+	 background-size: cover !important;
+	 background-position: center !important;
+	 height: 220px;
+	 padding: 1em 2em;
+	 background: #313131;
+	 border-radius: 10px;
+}
+ .flip > .front p, .flip > .back p {
+	 font-size: 0.9125rem;
+	 line-height: 160%;
+	 color: #999;
+}
+
+ 
+      
     </style>
 </head>
 <body>
@@ -257,227 +573,190 @@
 
             <ul class="navbar-nav mr-auto">
 
-                <li class="nav-item" style="margin-left: 350px">
+<%--                <li class="nav-item" style="margin-left: 350px">
                     <a class="nav-link" href="../User/SignUp.aspx" style="color: black">SignUp</a>
-                </li>
+                </li>--%>
                 <li class="nav-item">
-                    <a class="nav-link" href="Login.aspx" style="color: black">Login</a>
+                    <a class="nav-link" href="../User/BookingDriver.aspx" style="color: black">LogOut</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <section id="roadassistance">
-        <img class="d-block w-100" src="images/home2.jpg" alt="First slide" style="width: 100px; height: 600px" />
+        <img class="d-block w-100" src="https://cdn.dribbble.com/users/207059/screenshots/16573461/ms_11.gif" alt="First slide" style="width: 100px; height: 600px" />
         <br />
     </section>
     <%--  <section id="content">--%>
-
-    <%--     </section>--%>
-    <center>
-       <br /> <h1><b>What is 24x7 RoadSide Assistance? </b></h1><br />
-    </center>
-
-    <div class="bs-example">
+    
+    <section class="testimonial text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12  text-center" style="background-color: #d9ecff">
 
-
-                    <br />
-                    <p class="text-left">
-                        Roadside Assistance or a Breakdown cover is an add-on you can opt for in your <b>comprehensive
+            <div class="heading white-heading">
+                What is 24x7 RoadSide Assistance?
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <p>  Roadside Assistance or a Breakdown cover is an add-on you can opt for in your <b>comprehensive
             car insurance</b> or <b>two-wheeler insurance policy</b> , to help you in times where you need roadside assistance,
             a.k.a need some help when you’re stuck on the road.
                         <br />
                         <br />
 
                         Whether it’s a small mishap or a flat tyre, a 24x7 roadside assistance cover can help you in times of such troubles, 
-            without even accounting it as a claim.
-                    </p>
-                    <br />
-
-                    <h3 class="text-left"><b>How much does a Roadside Assistance cover cost?</b></h3>
-                    <p class="text-left">
-                        You can opt for a Roadside or Breakdown Assistance cover in your <b>comprehensive car</b> or<b> bike insurance policy </b>
+            without even accounting it as a claim.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                          <h1> <b>  <p> How much does a Roadside Assistance cover cost?</p> </b></h1>
+                                <br />
+                            <p>  You can opt for a Roadside or Breakdown Assistance cover in your <b>comprehensive car</b> or<b> bike insurance policy </b>
                         for a standard minimum addition in your premium.<br />
-                        At Quick Care, for a car it could cost you an additional<b> Rs 102</b>, while for a two-wheeler it could cost you<b> Rs 40.</b>
-                    </p>
+                        At Quick Care, for a car it could cost you an additional<b> Rs 102</b>, while for a two-wheeler it could cost you<b> Rs 40.</b></p>
 
-                    <br />
-                    <h3 class="text-left"><b>How does a Roadside Assistance cover work?</b></h3>
-                    <p class="text-left">
-                        Once you’ve already opted for a Roadside/Breakdown Assistance cover in your  car or bike insurance plan,
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                           <h1> <b>  <p> How does a Roadside Assistance cover work? </p> </b></h1>
+                            <p> Once you’ve already opted for a Roadside/Breakdown Assistance cover in your  car or bike insurance plan,
                         using the Roadside Assistance cover in times of need is easy!
-                        <br />
-                        <br />
+                        
+                        <br /><br />
 
-                        All you need to do in times of troubles (when you need the service) is give us a ring at<b> 1800-103-4448</b>
+  All you need to do in times of troubles (when you need the service) is give us a ring at<b> 1800-103-4448</b>
                         and keep your policy details handy and we’ll be there for you in no time.
-                        <br />
-                        <br />
+                        
+                        
 
-                         the Roadside Assistance cover comes with 24x7 support and takes care of the convenience
-                        and labor costs too. We <b>serve you up to 500 kms</b> from your city (unlike others covering only 100 kms)<br />
-                        <br />
-                        We would arrange for appropriate towing services to the nearest<b> Quick Care Authorized Repair Shop.</b> Provided always that:-
-                        <ul class="text-left">
+                       
+                        </div>
+                    </div>
+                     <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                           
+                        
+                        
 
-                            <li>We will bear the cost of Towing the Insured Vehicle up to 50 kms from the place of accident or breakdown.</li>
-                            <br />
-                            <li>Any cost and expenses pertaining to towing of the Insured Vehicle over and above 50 Kms shall be borne by You. </li>
-                            <ul />
-                    </p>
-
+                       <p>  the Roadside Assistance cover comes with 24x7 support and takes care of the convenience
+                        and labor costs too. 
+                        We serve you up to 500 kms from your city (unlike others covering only 100 kms. <br />
+                        
+                        We would arrange for appropriate towing services to the nearest. Quick Care Authorized Repair Shop. Provided always that:-
+                           <br /> We will bear the cost of Towing the Insured Vehicle up to 50 kms from the place of accident or breakdown.<br />
+                            
+                         Any cost and expenses pertaining to towing of the Insured Vehicle over and above 50 Kms shall be borne by You. 
+                             </p>
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
     <br />
+    <br />
+    <br />
+
+
+
+    <%--     </section>--%>
+
+
+        <%--     <section>--%>
+    <!-- horizontal -->
     <center>
-     <br />   <h1><b>What is Covered in a RSA Cover - Let’s dive into the details</b></h1> <br /><br />
+       <h1 style:"font-weight: bold"> <b>What is Covered in a RSA Cover - Let’s dive into the details</b></h1> <br /><br />
     </center>
 
-    <div class="bs-example">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12  text-center" style="background-color: #d9ecff">
-                    <center>
-                        <%-- <h1 >Gallery</h1>--%>
-                        <br />
-                      
-                        <table>
-                        <%--    <tr></tr>--%>
-                            <tr>
-
-                                <td>
-
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Flat Battery</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            This is dedicated for times when your car or two-wheeler is at a halt
-                               due to issues in your battery. 
-                            In this case, your RSA cover will be there for you, 
-                            including paying for all labor and conveyance costs involved.
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Towing Facility</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            In the case of serious cases where your vehicle can’t be repaired on spot and is required
-                            to be sent out to a workshop or garage for servicing, your roadside assistance cover would benefit
-                            you by providing you with the required Towing Facility.
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-
-                                </td>
-
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Flat Tyres</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            We’ve all had a flat tyre at some point in life! God forbid you are stranded with your vehicle 
-                            due to a flat tyre and have nowhere else to turn for help, your Roadside Assistance cover will benefit 
-                            you by arranging for the right technicians to replace and help you out with a spare tyre.
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-                                </td>
-
-                                <td>
-
-                                    <div class="card" style="width: 50rem; height: 20rem;background-color: #ffffff">
-                                        <br />
-                                        <h3 class="text-center"><b>Minor Repairs</b></h3>
-                                        <p class="text-center">
-                                            Sometimes, things happen and you’re just left out there wondering why your car or bike won’t start anymore!
-                            For unfortunate situations like that your Roadside Assistance could benefit you by providing for the repairs
-                            required at the need of the hour.
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-
-                                </td>
-                            </tr>
-                         <%--   <tr>--%>
-                             
-
-                            <%--    <td>
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Urgent Message Relay to Relatives</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            In an unfortunate case where you need to inform your relatives with an urgent message of the situation,
-                            we will take care of the same!
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-                                </td>--%>
-                          <%--  </tr>--%>
-
-                            <tr>
-                                <td>
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Medical Coordination</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            In unfortunate situations where not only your vehicle, but even you end up getting into trouble due to an accident midway,
-                            your Roadside Assistance cover would also help coordinating with the nearest medical center so that
-                            your medical needs are well taken care of.
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-
-                                </td>
-
-                                <td>
-                                    <div class="card" style="width: 50rem; height: 20rem; background-color: #ffffff">
-                                        <h3 class="text-center"><b>Fuel Assistance</b></h3>
-                                        <br />
-                                        <p class="text-center">
-                                            It happens to the best of us! Before you realize it, your fuel tank is already exhausted! 
-                            In such cases, your cover would help you by arranging for up to 5 litres of fuel to the location you’re stuck at! 
-                                        </p>
-                                        <div class="card-body">
-                                        </div>
-                                    </div>
-
-                                </td>
-                            </tr>
-
-
-                        </table>
-                        <br />
-                        <br />
-
-                    </center>
-                </div>
-            </div>
-        </div>
+<div class="bodys">
+<div class="flip">
+    <div class="front" style="background-image: url(https://media.tenor.com/qbZKKroIV1oAAAAM/dead-battery.gif)">
+       <h1>Flat Battery</h1>
     </div>
-    <br />
+    <div class="back">
+       
+       <h2> This is dedicated for times when your car or two-wheeler is at a halt due to issues in your battery. In this case, your RSA cover will be there for you, 
+           including paying for all labor and conveyance costs involved. </h2>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://media.tenor.com/btwRSh2Pr00AAAAM/tension-force-car.gif)">
+       <h1>Towing Facility</h1>
+    </div>
+    <div class="back">
+      <h2>   In the case of serious cases where your vehicle can’t be repaired on spot and is required to be sent out to a workshop or garage for servicing, your roadside assistance cover would benefit
+                            you by providing you with the required Towing Facility.</h2>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://img.philkotse.com/2019/03/15/b7Fg1q9w/flat-tire-slow-1625.gif)">
+       <h1> Flat Tyres</h1>
+    </div>
+    <div class="back">
+       
+       <h2> We’ve all had a flat tyre at some point in life! God forbid you are stranded with your vehicle 
+                            due to a flat tyre and have nowhere else to turn for help, your Roadside Assistance cover will benefit 
+                            you by arranging for the right technicians to replace and help you out with a spare tyre. </h2>
+    </div>
+</div>
+
+<br />
+<br />
+
+<!-- vertical -->
+  
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://media4.giphy.com/media/1qXjniLSOpxEmscAu6/200w.gif?cid=6c09b952b7l6hsmab9wtjr305je47m3n5srv4q8gp3t84cg5&rid=200w.gif&ct=g)">
+       <h1 >Minor Repairs</h1>
+    </div>
+    <div class="back">
+       <h2> Sometimes, things happen and you’re just left out there wondering why your car or bike won’t start anymore!
+                            For unfortunate situations like that your Roadside Assistance could benefit you by providing for the repairs
+                            required at the need of the hour.</h2>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://media.wired.com/photos/59266366f3e2356fd8009136/master/w_2560%2Cc_limit/MobileHealthAp_TA.gif)">
+       <h1 > Medical Coordination</h1>
+    </div>
+    <div class="back">
+       <h2> In unfortunate situations where not only your vehicle, but even you end up getting into trouble due to an accident midway,
+                            your Roadside Assistance cover would also help coordinating with the nearest medical center so that
+                            your medical needs are well taken care of. </h2>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://media4.giphy.com/media/l2R05wdisVHTOuchy/giphy.gif)">
+       <h1 >Fuel Assistance </h1>
+    </div>
+    <div class="back">
+       <h2>It happens to the best of us! Before you realize it, your fuel tank is already exhausted! 
+                            In such cases, your cover would help you by arranging for up to 5 litres of fuel to the location you’re stuck at!  </h2>
+    </div>
+</div>
+</div>
+    <%--     </section>--%>
+
+  
+                       
+
+    
+
+
+                                   
+
+         
+    <br /><br />
     <center>
         <h1><b>Exclusions and Other Things to keep in mind for Roadside Assistance</b></h1>
     </center>

@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../Content/bootstrap.min.css" />
+    <%--<link rel="stylesheet" href="../Content/bootstrap.min.css" />--%>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
 
@@ -29,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home" style="margin: 0px 20px 0px 120px;">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home" style="margin: 0px 20px 0px 120px;font-size:17px;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" style="font-size:17px" href="AboutUs.html">About Us</a>
                 </li>
                 <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" style="margin: 0px 20px 0px 20px; color: black" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
+                    <a class="nav-link dropdown-toggle" href="#" style="margin: 0px 20px 0px 20px; font-size:17px; color: black" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#services">24/7 On-road assitance</a>
@@ -44,7 +45,7 @@
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" style="font-size:17px;" href="ContactUs.html">Contact Us</a>
                 </li>
             </ul>
             <%--    <form class="form-inline my-2 my-lg-0">
@@ -55,10 +56,10 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item" style="margin-left: 350px">
-                    <a class="nav-link" href="../User/SignUp.aspx" style="color: black">SignUp</a>
+                    <a class="nav-link" style="font-size:17px;color: black" href="../User/SignUp.aspx" >SignUp</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Login.aspx" style="color: black">Login</a>
+                    <a class="nav-link" style="font-size:17px;color: black" href="Login.aspx" >Login</a>
                 </li>
             </ul>
         </div>
@@ -84,7 +85,7 @@
                     </div>
                     <div class="col-md-4 " id="form">
                         <br />
-                        <h1 class="bg-info" style="text-align: center">Welcome to QuickCare Services</h1>
+                        <h1 class="bg-info" style="text-align: center;">Welcome to QuickCare Services</h1>
                         <br />
                         <form id="form1" runat="server">
                             <div class="mb-3">

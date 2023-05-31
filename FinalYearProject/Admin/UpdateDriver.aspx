@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Content/bootstrap.min.css" />
     <style>
         body {
             margin: 0;
@@ -83,6 +83,25 @@
                 float: none;
             }
         }
+
+                #nav {
+            background-color: #eff3fb;
+            /*margin-top: -3px;*/
+            height: 60px;
+            margin-left: -13px;
+            margin-right: -17px;
+        }
+
+        #Label1 {
+            /*font-family:'Times New Roman', Times, serif;*/
+            font-family: 'Arial Rounded MT';
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .container-fluid{
+               background-color:#eff3fb;
+        }
            
 
     </style>
@@ -101,23 +120,20 @@
             <i class="fa fa-linkedin-square" style="font-size: 24px; margin-left: 10px"></i>
             <i class="fa fa-facebook-square" style="font-size: 24px; margin-left: 10px"></i>
 
-            <hr />
-            <a href="AdminPage.aspx">Dashboard </a>
-            <hr />
-             <a href="../Admin/AdminDashboard.aspx">Add Mechanic </a>
              <hr />
-            <a href="AddDriver.aspx">Add Driver </a>
-            <hr />
-            <a href="UpdateDriver.aspx">Update Driver </a>
-            <hr />
-           
-        <a href="FeedbackAdmin.aspx">User Feedback</a>
-              <hr />
-            <a href="#contact">Request </a>
-            <hr />
-              <a href="HomePage.aspx">LogOut</a>
-
-            <hr />
+        <a href="AdminPage.aspx">Dashboard</a>
+        <hr />
+         <a href="AdminDashboard.aspx">Add Mechanic</a>
+         <hr />
+   <%--     <a href="../AddDriver.aspx">Add Driver</a>
+        <hr />--%>
+        <a href="UpdateDriver.aspx">Update Driver</a>
+        <hr />
+        <a href="FeedbackAdmin">User Feedback</a>
+        <hr />
+   <%--     <a href="#contact">Request </a>
+        <hr />--%>
+          <a href="HomePage.aspx">LogOut</a>
         </div>
        
 
@@ -125,12 +141,17 @@
            <div class="content">
         <form id="form2" runat="server">
 
+                        <div id="nav">
+                <asp:Label ID="Label1" runat="server" CssClass="center-block" Text="Label"></asp:Label>
+                <%--  <asp:Image ID="Image1" runat="server" />--%>
+            </div>
+
              <div id="table1">
             <center>
-                <h1>Available Drivers</h1>
+                <h1 style="background-color:#507cd1;color:white;margin-left:43px">Available Drivers</h1>
               
            
-                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="276px" Width="868px" OnSelectedIndexChanged="OnSelectBooked">
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="Horizontal" Height="276px" Width="868px" OnSelectedIndexChanged="OnSelectBooked" CssClass="table table-hover table-responsive table-bordered">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField ShowHeader="False">
@@ -211,8 +232,11 @@
                                 <br />
                                 <div class="mb-3">
                                     <center>
+                                         <asp:Button type="submit" class="btn btn-primary " OnClick="AddDetails" Text="Add" runat="server"></asp:Button>
                                         <asp:Button type="submit" class="btn btn-primary " OnClick="UpdateDetails" Text="Update " runat="server"></asp:Button>
                                         <asp:Button type="submit" class="btn btn-primary " OnClick="DeleteDetails" Text="Delete" runat="server"></asp:Button>
+                                       
+                                   
                                     </center>
 
                                 </div>
